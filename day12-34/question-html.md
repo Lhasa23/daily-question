@@ -1,4 +1,4 @@
-# day12
+# day12-34
 
 1. 【12】常见的浏览器内核都有哪些？并介绍下你对内核的理解  
     内核主要分为渲染引擎和 JS 引擎。前者负责页面的渲染，后者负责执行解析 JavaScript。  
@@ -123,3 +123,7 @@
     1. HTML5简化了很多细微的语法，例如doctype的声明，只需要写`<!doctype html>`就行了。HTML5与HTML5，XHTML1兼容，但是与SGML不兼容。
     2. 新增与语义化标签【header、footer、section、article等】
     3. canvas替代Flash
+
+23. 【34】Standards模式和Quirks模式有什么区别？  
+    * 标准盒模型：元素内容宽度(width)； 实际宽度 = width + padding2 + border2 + margin2
+    * 怪异盒模型：元素内容宽度(width) = width - padding2 - border2； 实际宽度 = width + padding2 + border2 + margin2(带入width) = width + margin2
