@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hd {
+            height: 50px;
+            text-align: center;
+            background: #666;
+        }
+        #body {
+            padding: 0 200px 0 180px;
+            height: 100px;
+        }
+        #footer {
+            height: 50px;
+            text-align: center;
+            background: #666;
+        }
+        #left {
+            float: left;
+            width: 180px;
+            height: 100px;
+            margin-left: -100%;
+            background: #0c9;
+            /*中间栏的位置摆正之后，左栏的位置也相应右移，通过相对定位的left恢复到正确位置*/
+            position: relative;
+            left: -180px;
+        }
+        #middle {
+            float: left;
+            height: 100px;
+            width: 100%;
+            background: rgb(230, 247, 5);
+        }
+        #right {
+            float: left;
+            width: 200px;
+            height: 100px;
+            margin-left: -200px;
+            background: #0c9;
+            /*中间栏的位置摆正之后，右栏的位置也相应左移，通过相对定位的right恢复到正确位置*/
+            position: relative;
+            right: -200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hd">header</div>
+    <div id="body">
+        <div id="middle">middle</div>
+        <div id="left">left</div>
+        <div id="right">right</div>
+    </div>
+    <div id="footer">footer</div>
+</body>
+
+</html>
