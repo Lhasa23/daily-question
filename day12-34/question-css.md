@@ -1,4 +1,4 @@
-# day12
+# day12-34
 
 1. 【12】说说你对css盒子模型的理解  
     1. css盒模型由两个盒子组成，外在的控制是否换行的盒子，以及内在的控制元素内容的盒子。比如：display: inline-block, 则它的外在的盒子就是inline也就是不占据一行，而block则表示内部的元素具有块状特性。所以，display: inline其实就是display: inline-inline的缩写，display: block就是display: block-block的缩写。

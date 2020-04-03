@@ -1,4 +1,4 @@
-# day12
+# day12-34
 
 1. 【12】网页应用从服务器主动推送到客户端有那些方式？  
     websocket, [SSE](https://www.cnblogs.com/goloving/p/9196066.html), EventSource接口
