@@ -9,3 +9,8 @@
     XHTML 标签必须关闭  
     XHTML所有标签必须小写  
     XHTML标签必须正确嵌套
+
+3. 【37】html5哪些标签可以优化SEO?  
+    `<meta>`中的`title，description，keyword`  
+    语义化标签：  
+    `<nav>,<header>,<main>,<article>,<section>,<aside>,<footer>,<figure>,<picture>,<time>,<video>,<audio>`

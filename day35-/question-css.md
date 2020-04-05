@@ -39,3 +39,15 @@
     2. -moz- (火狐浏览器)
     3. -o- (旧版 Opera 浏览器等)
     4. -ms- (IE 浏览器 和 Edge 浏览器)
+
+3. 【37】不使用border画出1px高的线，在不同浏览器的标准和怪异模式下都能保持效果一样  
+
+    ```css
+    .box::after{
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: black;
+    }
+    ```

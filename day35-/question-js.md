@@ -12,3 +12,17 @@
 
 2. 【36】请手写一个幻灯片的效果  
     **欠债！**
+
+3. 【37】找到字符串中最长的单词，并返回它的长度
+
+    ```js
+    const longestReducer = (pre, cur) => {
+        if (!pre.length || pre[0].length < cur.length) return [cur]
+        if (pre[0].length === cur.length) {
+            pre.push(cur)
+            return pre
+        }
+        return pre
+    }
+    const longest = array.reduce(longestReducer, [])
+    ```
