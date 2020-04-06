@@ -51,3 +51,22 @@
         background-color: black;
     }
     ```
+
+4. 【38】实现单行文本居中和多行文本左对齐并超出显示"..."  
+    [单行居中显示文字，多行居左显示，最多两行超过用省略号结尾](https://github.com/chokcoco/iCSS/issues/50)
+
+5. 【39】写出你知道的CSS水平和垂直居中的方法  
+    [如何居中一个元素（终结版）](https://juejin.im/post/5bc3eb8bf265da0a8a6ad1ce#comment)
+
+6. 【40】怎么才能让图文不可复制？  
+    让元素不能被选中。
+
+    ```css
+    {
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+    ```
