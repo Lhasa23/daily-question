@@ -42,3 +42,11 @@
         big  
         font  
         frame/frameset  
+
+7. 【41】webSocket怎么做兼容处理？  
+    Socke.IO:
+    - Adobe Flash Socket（缺点：需要在服务器上打开一个额外的端口，默认为10843）
+    - Ajax long polling
+    - Ajax multipart streaming
+    - Forever iframe
+    - JSONP polling
