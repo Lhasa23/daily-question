@@ -50,3 +50,9 @@
     - Ajax multipart streaming
     - Forever iframe
     - JSONP polling
+
+8. 【42】解释下什么是ISISO8859-2字符集？  
+    算是ASCII码的拓展字符集
+    > ISO/IEC 8859-1，又称Latin-1或“西欧语言”，ISO/IEC 8859-2 Latin-2或“中欧语言”，是国际标准化组织内ISO/IEC 8859的8位字符集。它以ASCII为基础，在空置的0xA0-0xFF的范围内，加入192个字母及符号，藉以供使用变音符号的拉丁字母语言使用。
+
+    [参考资料](https://baike.baidu.com/item/ASCII/309296?fr=aladdin#6)
