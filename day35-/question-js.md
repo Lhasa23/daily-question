@@ -61,3 +61,6 @@
     每一个载入浏览器的HTML文档都会成为document对象。document对象使我们可以使用脚本(js)中对HTML页面中的所有元素进行访问。
     document对象是window对象的一部分可以通过window.document属性对其进行访问。  
     HTMLDocument接口进行了扩展，定义HTML专用的属性和方法，很多属性和方法都是HTMLCollection对象，其中保存了对锚、表单、链接以及其他可脚本元素的引用。
+
+9. 【43】JQuery的源码看过吗？能不能简单概括一下它的实现原理？  
+    **单例 + 链式调用？？？？？**

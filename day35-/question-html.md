@@ -56,3 +56,8 @@
     > ISO/IEC 8859-1，又称Latin-1或“西欧语言”，ISO/IEC 8859-2 Latin-2或“中欧语言”，是国际标准化组织内ISO/IEC 8859的8位字符集。它以ASCII为基础，在空置的0xA0-0xFF的范围内，加入192个字母及符号，藉以供使用变音符号的拉丁字母语言使用。
 
     [参考资料](https://baike.baidu.com/item/ASCII/309296?fr=aladdin#6)
+
+9. 【43】如何让元素固定在页面底部？有哪些比较好的实践？  
+    `sticky footer`布局：  
+    有`absolute`，`calc`，`table`，`FlexBox`等方案。  
+    [Sticky Footer，完美的绝对底部](https://aotu.io/notes/2017/04/13/Sticky-footer/index.html)
