@@ -90,3 +90,29 @@
 
 10. 【44】手写一个满屏品字布局的方案  
     [品字布局](https://github.com/haizlin/fe-interview/issues/166)
+
+11. 【45】你知道的等高布局有多少种？  
+    margin和padding抵消：
+
+    ```css
+    .box,.box2{
+        float: left;
+        width: 100px;
+    }
+    .box {
+        background: #cccccc;
+        height: 300px;
+    }
+    .box2 {
+        background: #306eff;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+    ```
+
+    flex拉伸：
+
+    ```css
+    display: flex;
+    align-items: stretch;
+    ```

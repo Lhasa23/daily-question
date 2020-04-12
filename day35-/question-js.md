@@ -67,3 +67,31 @@
 
 10. 【44】深拷贝对象的方法有哪些，并把你认为最好的写出来  
     递归，如果是基本数据类型直接复制，如果是引用类型再进一层递归。
+
+    ```js
+    function clone( o ){
+        // 请补充代码
+        let result
+        if (o.constructor === Object) {
+            result = {}
+        } else if (o.constructor === Array) {
+            result = []
+        } else {
+            return o
+        }
+
+        for (let i in o) {
+            let value = o[i]
+            if (value.constructor === Object || value.constructor === Array) {
+            result[i] = clone(value)
+            } else {
+            result[i] = value
+            }
+        }
+        return result
+    }
+    ```
+
+11. 【45】写出几种创建对象的方式，并说说他们的区别是什么？  
+    字面量，工厂模式，构造函数  
+    [创建对象的方法](https://github.com/haizlin/fe-interview/issues/171)
