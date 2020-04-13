@@ -116,3 +116,6 @@
     display: flex;
     align-items: stretch;
     ```
+
+12. 【46】说说你对媒体查询的理解  
+    media query。包括现在有的时候为了兼容也会用到一些，查找对应范围使用不同的样式[MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries)
