@@ -119,3 +119,6 @@
 
 12. 【46】说说你对媒体查询的理解  
     media query。包括现在有的时候为了兼容也会用到一些，查找对应范围使用不同的样式[MDN](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries)
+
+13. 【47】你是怎样抽离样式模块的？  
+    在使用Vue时，CSS本来就是在组件内的
