@@ -122,3 +122,6 @@
 
 13. 【47】你是怎样抽离样式模块的？  
     在使用Vue时，CSS本来就是在组件内的
+
+14. 【48】你知道全屏滚动的原理是什么吗？它用到了CSS的哪些属性？  
+    [全屏滚动详解](https://github.com/haizlin/fe-interview/issues/182#issuecomment-535862179)
