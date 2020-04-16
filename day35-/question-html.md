@@ -111,3 +111,7 @@
     比如：
 
     W3C组织意识到了之前HTML版本的不足，推出的HTML5进一步推进了Web语义化发展，采用了诸如footer、section等语义化标签，弥补了采用id="footer"或者class="footer"形式的不足，以更好的推动Web的发展。
+
+15. 【49】说说你对target="_blank"的理解？有啥安全性问题？如何防范？  
+    使用一个新的空白标签页打开链接  
+    安全性问题：如果url中带有敏感信息, 会被第三方网站读取到document.referer
