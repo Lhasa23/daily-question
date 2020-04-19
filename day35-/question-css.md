@@ -135,7 +135,15 @@
     所以先沟通，告知设计实际的情况，然后在综合考量的情况下应该尽可能去实现，通常采用载入字体和图片化的方式。
 
 16. 【50】列举 CSS 优化、提高性能的方法
+
     1. 加载性能
     2. 选择器性能
     3. 渲染性能  
        [细节分析](https://github.com/haizlin/fe-interview/issues/190#issuecomment-498898709)
+
+17. 【51】有用过 Flex 吗？简要说下你对它的了解  
+    方便/好用  
+    子元素超出的 bug（`overflow: hidden;`）
+
+18. 【52】要是 position 跟 display、overflow、float 这些特性相互叠加后会怎么样？  
+    [position,display,overflow,float](https://www.cnblogs.com/jiangtuzi/p/4128962.html)
