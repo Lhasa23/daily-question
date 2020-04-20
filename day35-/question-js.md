@@ -169,3 +169,15 @@
     1. 给父元素绑定事件
     2. 监听子元素的冒泡事件
     3. 找到是哪个子元素的事件
+
+19. 【53】document 的 load 和 ready 有什么区别？  
+    在页面资源（比如图片和媒体资源，它们的加载速度远慢于 DOM 的加载速度）加载完成之后才执行`window.onload`  
+    页面 DOM 全部加载完成后执行`document.ready`
+
+20. 【54】写一个函数找出给定数组中的最大差值
+
+    ```js
+    function maxSubtrack(arr) {
+      return Math.max(...arr) - Math.min(...arr)
+    }
+    ```

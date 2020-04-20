@@ -147,3 +147,25 @@
 
 18. 【52】要是 position 跟 display、overflow、float 这些特性相互叠加后会怎么样？  
     [position,display,overflow,float](https://www.cnblogs.com/jiangtuzi/p/4128962.html)
+
+19. 【53】怎么使用自定义字体？有什么注意事项？
+
+    ```css
+    @font-face {
+      font-family: '自定义字体名称';
+      src: url('字体文件名.eot'); /* IE9 Compat Modes /
+      src: url('字体文件名.eot?#iefix') format('embedded-opentype'), / IE6-IE8 /
+      url('字体文件名.woff') format('woff'), / Modern Browsers /
+      url('字体文件名.ttf') format('truetype'), / Safari, Android, iOS /
+      url('字体文件名.svg#字体文件名') format('svg'); / Legacy iOS */
+      font-style: normal;
+      font-weight: normal;
+    }
+    ```
+
+    之后使用 font-family 使用，但该方法适合英文字源的字体，中文字源字体文件过大，容易加载缓慢。
+
+20. 【54】css3 的:nth-child 和:nth-of-type 的区别是什么？  
+    :nth-child(n) 选择器匹配属于其父元素的第 N 个子元素，不论元素的类型。  
+    :nth-of-type(n) 选择器匹配属于父元素的特定类型的第 N 个子元素。  
+    n 可以是数字、关键词或公式。
