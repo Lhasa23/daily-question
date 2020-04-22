@@ -181,3 +181,59 @@
       return Math.max(...arr) - Math.min(...arr)
     }
     ```
+
+21. 【55】写出 4 个使用 this 的典型例子
+
+    1. implicit binding
+
+    ```js
+    var b = {
+      function a() {
+        console.log(this)
+      }
+    }
+    b.a() // this -> b
+    ```
+
+    ```js
+    function B() {
+      this.a = function () {
+        console.log(this.b)
+      }
+      this.b = 1
+    }
+    let b = new B()
+    b.a() // this -> object b
+    ```
+
+22. 【56】JSONP 的原理是什么？解决什么问题？  
+    用于解决跨域问题，但只能发送 get 请求；  
+    原理：
+
+    1. 创建 script 元素 请求对应路径
+    2. 将回调函数挂载全局
+    3. 将 script 元素挂载到页面上
+    4. script 请求到的代码会执行挂载在全局的回调函数 并传递响应值
+    5. 当 script 加载完毕移除该元素
+
+    ```js
+    function JSONP(url, params, callback) {
+      const script = document.createElement('script')
+      script.src =
+        url + parseObjToParams({ ...params, callback: 'jsonpCallback' })
+      document.body.appendChild(script)
+      window.jsonpCallback = callback
+      script.onload = () => {
+        document.body.removeChild(script)
+      }
+    }
+
+    JSONP('http://localhost:3019/asd', { name: 'vijay' }, (data) => {
+      console.log(data)
+    })
+
+    //server
+    app.use('/asd', (req, res, next) => {
+      res.jsonp({ user: 'tobi' })
+    })
+    ```

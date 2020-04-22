@@ -141,3 +141,11 @@
 
 20. 【54】你有了解 HTML5 的地理定位吗？怎么使用？  
     浏览器支持的话：`navigator.geolocation.getCurrentPosition(success, error, options)`
+
+21. 【55】HTML5 中新添加的表单属性有哪些？
+    placeholder,autofocus,multiple  
+    [HTML5 新增表单属性](http://www.w3school.com.cn/html5/html_5_form_attributes.asp)
+
+22. 【56】渐进式渲染是什么？  
+    渐进式渲染是用来提高网页性能，以尽快呈现页面的技术。  
+    比如：图片懒加载；确定显示内容的优先级；等
