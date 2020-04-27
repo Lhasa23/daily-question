@@ -238,3 +238,8 @@
       res.jsonp({ user: 'tobi' })
     })
     ```
+
+23. 【57】setTimeout、Promise、Async/Await 的区别  
+    setTimeout类的定时器，将任务推入宏任务栈  
+    Promise、Async/Await将异步任务推入微任务栈  
+    当同步任务全部被加载到任务队列中后异步任务（微任务栈）才被推入任务队列，而当任务队列全部执行完后，才把宏任务栈中的任务推入任务队列执行
